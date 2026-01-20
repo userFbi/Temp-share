@@ -198,6 +198,12 @@ uploadBtn.addEventListener("click", async () => {
       // SHOW CODE
       document.getElementById("shareUrl").value = code;
 
+      document
+        .getElementById("openDownloadBtn")
+        .addEventListener("click", () => {
+          window.open(`download.html?code=${code}`, "_blank");
+        });
+
       expiryDaysEl.textContent = expiryDays;
       expiryPlural.textContent = expiryDays > 1 ? "s" : "";
     }
