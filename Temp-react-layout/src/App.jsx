@@ -7,6 +7,7 @@ import Index from "./pages/Index.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 import "./star.css"
+import TempShare from "./pages/Index.jsx";
 
 const queryClient = new QueryClient();
 
@@ -17,8 +18,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<TempShare />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

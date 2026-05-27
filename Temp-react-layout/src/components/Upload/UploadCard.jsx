@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { Upload, File, X, Image, Video, FileText, CheckCircle, Loader2 } from "lucide-react";
-import ExpiryDropdown from "./ExpiryDropdown.jsx";
+import ExpiryDropdown from "../ExpiryDropdown.jsx";
 
 const UploadCard = () => {
   const [files, setFiles] = useState([]);
